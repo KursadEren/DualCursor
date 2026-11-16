@@ -40,6 +40,10 @@ Ayar dosyası: `%APPDATA%\DualCursor\config.json`
 
 ## Kısayolu değiştirme
 
+**Windows:** Tepsideki simgeye çift tıkla (veya sağ tık → "Kısayolu değiştir…"), kutuya tıklayıp yeni kombinasyona bas, Kaydet. Kısayol başka bir uygulama tarafından kullanılıyorsa uygulama açılışta ayarlar penceresini kendisi açar.
+
+Ayar dosyasını elle düzenlemek istersen:
+
 ```json
 {
   "key": "f13",
