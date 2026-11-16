@@ -51,6 +51,8 @@ jobs:
         with:
           path: dist
           merge-multiple: true
+      - name: Zip Windows exe
+        run: cd dist && zip -9 DualCursor-windows.zip DualCursor.exe
       - uses: softprops/action-gh-release@v2
         with:
           tag_name: latest
@@ -58,5 +60,6 @@ jobs:
           prerelease: true
           make_latest: true
           files: |
+            dist/DualCursor-windows.zip
             dist/DualCursor.exe
             dist/DualCursor-macos
